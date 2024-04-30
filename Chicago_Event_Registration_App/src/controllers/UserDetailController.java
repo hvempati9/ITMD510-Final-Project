@@ -130,9 +130,6 @@ public class UserDetailController implements Initializable {
 	// Refresh event table view with updated data
 	public void updateEventsTableView(ResultSet rs) {
 		try {
-			// Clear the existing data in tableDataList
-			tableDataList.clear();
-			
 			while (rs.next()) {
 				// Add data from ResultSet to observable list
 				Map<String, String> dataRow = new HashMap<>();
