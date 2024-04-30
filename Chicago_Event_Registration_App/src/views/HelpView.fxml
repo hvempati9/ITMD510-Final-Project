@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HelpController">
+   <children>
+      <ImageView fx:id="help" fitHeight="403.0" fitWidth="605.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/help.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="167.0" layoutY="28.0" text="Contact us @ 312-xxx-xxxx" textFill="#074ee3">
+         <font>
+            <Font name="Calibri Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="userlogin" layoutX="447.0" layoutY="106.0" onAction="#goToUserLogin" text="User Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="home" layoutX="23.0" layoutY="24.0" onAction="#goToHome" text="Go to Home">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="adminlogin" layoutX="438.0" layoutY="165.0" onAction="#goToAdminLogin" text="Admin Login">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

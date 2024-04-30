@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controllers.WelcomeController">
+   <children>
+      <ImageView fx:id="chicago" fitHeight="381.0" fitWidth="583.0" layoutX="14.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/welcome.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="userlogin" layoutX="395.0" layoutY="63.0" onAction="#userLogin" text="User Login" textFill="#dd0b0b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="adminlogin" layoutX="383.0" layoutY="118.0" onAction="#adminLogin" text="Admin Login" textFill="#dd0b0b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="help" layoutX="39.0" layoutY="40.0" onAction="#help" text="Help" textFill="#db0b0b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="94.0" layoutY="183.0" text="Chicago Event Registration" textFill="#bb0ccc">
+         <font>
+            <Font name="System Bold Italic" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

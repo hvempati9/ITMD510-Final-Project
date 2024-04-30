@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserLoginController">
+   <children>
+      <AnchorPane layoutX="94.0" layoutY="37.0" prefHeight="327.0" prefWidth="412.0">
+         <children>
+            <Label layoutX="89.0" layoutY="56.0" text="Username" />
+            <Label layoutX="89.0" layoutY="112.0" text="Password" />
+            <TextField fx:id="username" layoutX="154.0" layoutY="52.0" promptText="Enter your Username" />
+            <PasswordField fx:id="password" layoutX="154.0" layoutY="108.0" promptText="Enter your Password" />
+            <Button fx:id="login" layoutX="128.0" layoutY="178.0" mnemonicParsing="false" onAction="#userLogin" text="Login" />
+            <Button fx:id="home" layoutX="229.0" layoutY="178.0" mnemonicParsing="false" onAction="#goToHome" text="Home" />
+            <Label layoutX="114.0" layoutY="240.0" text="Not a customer yet?" />
+            <Hyperlink fx:id="signup" layoutX="245.0" layoutY="235.0" onAction="#userSignUp" text="Sign Up">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Label fx:id="errmsg" layoutX="103.0" layoutY="279.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="265.0" layoutY="14.0" text="User Login" textFill="#4c79b7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
