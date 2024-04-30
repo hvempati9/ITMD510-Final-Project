@@ -129,6 +129,9 @@ public class ManageRegisteredUsersController implements Initializable {
 	// Refresh user events table view with data from result set
 	public void updateUserEventsTableView(ResultSet rs) {
 		try {
+			// Clear the existing data in eventDataList
+			eventDataList.clear();
+
 			while (rs.next()) {
 				// Create a map for each row of data and add it to the observable list
 				Map<String, String> dataRow = new HashMap<>();
