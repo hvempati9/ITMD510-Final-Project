@@ -149,6 +149,9 @@ public class ManageEventsController implements Initializable {
 	// Refresh TableView with data from ResultSet
 	public void updateEventsTableView(ResultSet rs) {
 		try {
+			// Clear the existing data in eventDataList
+			eventDataList.clear();
+			
 			while (rs.next()) {
 				// Create a map to store row data
 				Map<String, String> dataRow = new HashMap<>();
